@@ -1,5 +1,5 @@
 import "../data/actors";
-import "../components/ActorsComponent.css";
+import "../components/ActorsComponent.css"; // hier solltest du ./ActorsComponent.css verwenden
 import { actors } from "../data/actors";
 import { Link } from "react-router-dom";
 export function ActorsComponent() {
