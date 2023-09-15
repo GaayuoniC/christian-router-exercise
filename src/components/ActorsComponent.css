@@ -1,0 +1,11 @@
+.actors-container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+
+  margin-top: 50px;
+  width: 30vw;
+  border: 1px solid black;
+}

@@ -7,7 +7,10 @@ import { ErrorPage } from "./components/ErrorPage";
 import { HomePage } from "./pages/HomePage";
 import { Movies } from "./pages/Movies";
 import { Actors } from "./pages/Actors";
-import { ActorsComponent } from "./components/ActorsComponent";
+// import { ActorsComponent } from "./components/ActorsComponent";
+// import { MovieComponent } from "./components/MovieComponents";
+import { MovieDetails } from "./pages/MovieDetails";
+import { ActorDetails } from "./pages/ActorDetails";
 
 const router = createBrowserRouter([
   {
@@ -18,15 +21,22 @@ const router = createBrowserRouter([
       { index: true, element: <HomePage /> },
       {
         path: "actors",
-        element: <Actors />,
+        // element: <Actors />,
         children: [
           { index: true, element: <Actors /> },
-          { path: "actorsId", element: <ActorsComponent /> },
+          { path: ":actorsId", element: <ActorDetails /> },
         ],
       },
       {
         path: "movies",
-        element: <Movies />,
+        // element: <Movies />,
+        children: [
+          { index: true, element: <Movies /> },
+          {
+            path: ":moviesId",
+            element: <MovieDetails />,
+          },
+        ],
       },
     ],
   },

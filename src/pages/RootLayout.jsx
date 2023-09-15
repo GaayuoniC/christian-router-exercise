@@ -7,7 +7,7 @@ export function RootLayout() {
     <>
       <NavBar />
       <main>
-        <p>Welcome to Campus Talents Movies!</p>
+        <h1>Welcome to Campus Talents Movies!</h1>
         <Outlet />
       </main>
       <Footer />

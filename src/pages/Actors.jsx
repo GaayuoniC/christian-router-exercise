@@ -11,11 +11,11 @@ export function Actors() {
   return (
     <>
       <section>
-        <h2>Actors List</h2>
+        <h2>Actors</h2>
         <ActorsComponent />
       </section>
       <Link to="/movies">Link to movies</Link>
-      <p>not working!</p>
+     
 
       <p>{actorId}</p>
     </>

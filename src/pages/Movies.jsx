@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import { MovieComponent } from "../components/MovieComponents";
+import { MoviesComponent } from "../components/MoviesComponent";
 
 export function Movies() {
   const { moviesList } = useParams();
   return (
     <>
       <h2>Movies</h2>
-      <MovieComponent />
+      <MoviesComponent />
       <Link to="/actors">Link to actors</Link>
       <p>{moviesList}</p>
       {/* <div>
